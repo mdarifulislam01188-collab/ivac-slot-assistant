@@ -1,0 +1,17 @@
+{
+  "name": "IVAC Slot Assistant — Chittagong",
+  "short_name": "IVAC Assistant",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#f5f7f4",
+  "theme_color": "#123b2c",
+  "description": "Unofficial reminder and checklist for manually checking Bangladesh IVAC tourist visa appointments.",
+  "icons": [
+    {
+      "src": "icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

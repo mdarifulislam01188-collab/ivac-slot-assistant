@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#123b2c">
+<title>IVAC Slot Assistant — Chittagong</title>
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="icon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="top">
+  <div class="brand"><div class="mark">IN</div><div><strong>IVAC Slot Assistant</strong><small>Bangladesh · Tourist Visa</small></div></div>
+  <span class="pill">Unofficial helper</span>
+</header>
+<main>
+  <section class="hero">
+    <p class="eyebrow">YOUR APPOINTMENT COMPANION</p>
+    <h1>Check carefully.<br><em>Book manually.</em></h1>
+    <p class="sub">A simple reminder and checklist for your Chittagong IVAC appointment process.</p>
+    <a class="primary" href="https://appointment.ivacbd.com/" target="_blank" rel="noopener">Open official appointment portal ↗</a>
+    <p class="notice">This app does not access IVAC accounts or detect live slots. Always verify availability on the official portal. The official FAQ says the Webfile used for booking must be no older than 30 days.</p>
+  </section>
+
+  <section class="panel">
+    <div class="section-head"><div><p class="eyebrow">PREFERRED CENTRE</p><h2>Chittagong</h2></div><span class="tag">Tourist · Regular</span></div>
+    <div class="status-row"><span class="dot"></span><span id="reminderStatus">Reminder is not running</span></div>
+    <div class="timer" id="countdown">15:00</div>
+    <p class="muted">Manual checking reminder · every 15 minutes</p>
+    <div class="actions">
+      <button id="startBtn" class="primary-btn">Start reminder</button>
+      <button id="checkBtn" class="secondary-btn">I checked the portal</button>
+    </div>
+    <p id="lastCheck" class="tiny">Last check: not recorded</p>
+    <div class="switchline"><label for="notifyToggle">Browser notifications</label><input id="notifyToggle" type="checkbox" checked></div>
+    <div class="switchline"><label for="soundToggle">Reminder sound</label><input id="soundToggle" type="checkbox" checked></div>
+    <p class="tiny">Keep this page open for the in-page timer. Browser/Android background behaviour varies; reminders are not guaranteed if the browser is closed or the phone restricts background activity.</p>
+  </section>
+
+  <section class="panel">
+    <div class="section-head"><div><p class="eyebrow">BEFORE YOU BOOK</p><h2>Booking checklist</h2></div><span id="progress" class="tag">0 / 6</span></div>
+    <div class="progress"><div id="progressBar"></div></div>
+    <div class="checklist" id="checklist">
+      <label><input type="checkbox"> IVAC account uses my own mobile number and email</label>
+      <label><input type="checkbox"> Passport, NID and date of birth match the Webfile</label>
+      <label><input type="checkbox"> Original Webfile PDF is ready and is not older than 30 days</label>
+      <label><input type="checkbox"> Chittagong centre selected, if shown as eligible</label>
+      <label><input type="checkbox"> Future appointment date and payment details checked carefully</label>
+      <label><input type="checkbox"> Successful booking confirmed and invoice downloaded</label>
+    </div>
+    <p class="tiny">IVAC's published FAQ says booking must be completed within 15 minutes after starting the booking flow; the slot is confirmed only after successful payment. Same-day appointments are not available, and confirmed appointments cannot be rescheduled or cancelled. Do not share your password, OTP or Webfile with agents.</p>
+  </section>
+
+  <section class="panel links">
+    <p class="eyebrow">OFFICIAL RESOURCES</p>
+    <a href="https://appointment.ivacbd.com/" target="_blank" rel="noopener">IVAC appointment portal <span>↗</span></a>
+    <a href="https://www.ivacbd.com/" target="_blank" rel="noopener">IVAC Bangladesh website <span>↗</span></a>
+    <a href="https://indianvisaonline.gov.in/" target="_blank" rel="noopener">Government of India visa portal <span>↗</span></a>
+  </section>
+</main>
+<footer>Independent personal helper · Not affiliated with IVAC or the Government of India.</footer>
+<script src="app.js"></script>
+</body>
+</html>
